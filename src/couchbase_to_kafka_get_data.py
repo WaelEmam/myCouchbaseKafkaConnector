@@ -29,9 +29,9 @@ def couchbase_connect_local():
 
 def get_couchbase_data(query):
     endpoint = "couchbase://localhost"
-    username = "admin"
-    password = "password"
-    bucket_name = "snowflake"
+    username = "<username>"
+    password = "<password>"
+    bucket_name = "kafka"
 
     try:
         cluster = couchbase_connect_local()
@@ -55,22 +55,6 @@ def get_couchbase_data(query):
         print(e)
 
     return results
-
-
-def snowflake_connect():
-    conn = snowflake.connector.connect(
-        user="rjsample",
-        password="Password1!",
-        account="qqa29208.us-east-1",
-        # warehouse='COMPUTE_WH',
-        # database='DEMO_DB',
-        database="DEMO_SAMPLE_DATA",  # todo pass in this as an argument
-        schema="public",
-    )
-    # Create cursor
-    cur = conn.cursor()
-
-    return conn, cur
 
 
 def run_producer(dict_messages):
