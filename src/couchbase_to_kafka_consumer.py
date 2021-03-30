@@ -6,8 +6,8 @@ from couchbase.cluster import PasswordAuthenticator
 
 def couchbase_connect():
     endpoint = "couchbase://localhost"
-    username = "admin"
-    password = "password"
+    username = "<username>"
+    password = "<password>"
     bucket_name = "kafka"
 
     try:
