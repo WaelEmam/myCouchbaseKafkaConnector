@@ -1,5 +1,4 @@
 from confluent_kafka import Consumer, KafkaError
-
 from couchbase.cluster import Cluster
 from couchbase.cluster import ClusterOptions
 from couchbase.cluster import PasswordAuthenticator
