@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-readonly LOG_FILE="/Users/rickjacobs/Downloads/script.log"
+readonly LOG_FILE="/Users/Downloads/script.log"
 
 
 #
@@ -13,6 +13,6 @@ date >> $LOG_FILE
 
 echo "You are running $0 the results are below" >> $LOG_FILE
 
-cd /Users/rickjacobs/Desktop/Stuff/Couchbase/kafka/confluent-5.5.1/
+cd /Users/Couchbase/kafka/confluent-5.5.1/
 
 ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties
